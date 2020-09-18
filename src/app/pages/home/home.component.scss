@@ -1,0 +1,25 @@
+.lading-section {
+  .landing-img {
+    height: 550px;
+  }
+}
+
+.form-section {
+  background-color: rgb(223, 223, 223);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem 0 1rem 0;
+
+  .card {
+    .card-header {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      border: none;
+      .card-img-top {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+}
