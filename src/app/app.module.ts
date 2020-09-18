@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ItemsComponent } from './pages/items/items.component';
 import { LevelsComponent } from './pages/levels/levels.component';
 import { EnemiesComponent } from './pages/enemies/enemies.component';
+import { ItemComponent } from './components/items/item/item.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,11 @@ import { EnemiesComponent } from './pages/enemies/enemies.component';
     HomeComponent,
     ItemsComponent,
     LevelsComponent,
-    EnemiesComponent
+    EnemiesComponent,
+    ItemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
