@@ -15,6 +15,9 @@ export class ItemService {
   addItem(newItem: Item) {
     this.items.next(this.items.getValue().concat([newItem]));
   }
+  getItemByid(id) {
+    return this.items.getValue().find((i) => i.id == id);
+  }
   subscribeItems() {
     return this.items.asObservable();
   }

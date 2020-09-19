@@ -12,6 +12,7 @@ import { LevelsComponent } from './pages/levels/levels.component';
 import { EnemiesComponent } from './pages/enemies/enemies.component';
 import { ItemComponent } from './components/items/item/item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ItemDetailsComponent } from './pages/item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LevelsComponent,
     EnemiesComponent,
     ItemComponent,
+    ItemDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

@@ -6,6 +6,6 @@
         <img [src]="item.image" class="card-img" alt="item">
     </div>
     <div class="card-body pt-1 pb-1">
-        <a href="#" class="card-link">See</a>
+        <a href="javascript:;" [routerLink]="['/items/'+item.id+'/details']" class="card-link">See</a>
     </div>
 </div>
