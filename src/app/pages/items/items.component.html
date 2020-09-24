@@ -1,4 +1,5 @@
 <div class="container pt-3 pb-5 mb-5">
+    <!-- title -->
     <div class="row">
         <div class="col-12 text-center">
             <h1>List of Items</h1>
@@ -9,13 +10,11 @@
             </p>
         </div>
     </div>
+    <!-- search -->
     <div class="row pt-4">
         <div class="col-12 d-flex justify-content-between">
-            <span></span>
             <div>
                 <div class="input-group">
-                    <input type="text" class="form-control form-control-sm" [formControl]="filter"
-                        placeholder="Search item by name...">
                     <div class="input-group-append">
                         <span class="input-group-text text-muted" id="basic-addon2">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
@@ -27,10 +26,15 @@
                             </svg>
                         </span>
                     </div>
+                    <input type="text" class="form-control form-control-sm" [formControl]="filter"
+                        placeholder="Search item by name...">
+
                 </div>
             </div>
+            <a href class="btn btn-primary btn-sm" [routerLink]="['/items/form']">New Item</a>
         </div>
     </div>
+    <!-- items -->
     <div class="row pt-5">
         <div class="col-12">
             <div class="container-fluid p-0">

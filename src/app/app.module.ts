@@ -13,6 +13,7 @@ import { EnemiesComponent } from './pages/enemies/enemies.component';
 import { ItemComponent } from './components/items/item/item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ItemDetailsComponent } from './pages/item-details/item-details.component';
+import { ItemsFormComponent } from './pages/items-form/items-form.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ItemDetailsComponent } from './pages/item-details/item-details.componen
     EnemiesComponent,
     ItemComponent,
     ItemDetailsComponent,
+    ItemsFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
